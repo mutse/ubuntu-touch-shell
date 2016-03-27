@@ -17,4 +17,8 @@ Some Shell Commands Tips of Ubuntu Touch.
 
     $ /usr/share/ofono/scripts/send-sms /ril_0 +86134xxxxxxxx "Hello, I am Mutse Young and use ubuntu phone to send SMS to you." 0
 
+## Howto Install the Click Package on Ubuntu Linux
+
+    $ adb push uappname.author_version.click /home/phablet/Downloads/
+    $ adb shell "sudo -iu phablet pkcon --allow-untrusted install-local /home/phablet/Downloads/uappname.author_version.click"
 
