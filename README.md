@@ -22,3 +22,7 @@ Some Shell Commands Tips of Ubuntu Touch.
     $ adb push uappname.author_version.click /home/phablet/Downloads/
     $ adb shell "sudo -iu phablet pkcon --allow-untrusted install-local /home/phablet/Downloads/uappname.author_version.click"
 
+## Howto Switch Channel on Ubuntu Phone
+
+    $ sudo system-image-cli --switch ubuntu-touch/rc-proposed/ubuntu --build 0
+
