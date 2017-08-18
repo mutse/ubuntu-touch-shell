@@ -26,3 +26,13 @@ Some Shell Commands Tips of Ubuntu Touch.
 
     $ sudo system-image-cli --switch ubuntu-touch/rc-proposed/ubuntu --build 0
 
+## Howto Backup or Restore Ubuntu Touch
+
+    $ adb shell tar -czpf /tmp/backup.tar.gz /home/phablet
+    /etc/NetworkManager/system-connections
+    $ adb pull /tmp/backup.tar.gz .
+
+    $ adb push backup.tar.gz /tmp
+    $ adb shell tar -xzpf /tmp/backup.tar.gz -C /
+
+
